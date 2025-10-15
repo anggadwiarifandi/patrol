@@ -374,7 +374,9 @@ void http_parser_settings_init(http_parser_settings* settings);
 
 /* Executes the parser. Returns number of parsed bytes. Sets
  * `parser->http_errno` on error. */
-size_t http_parser_execute(http_parser* parser, const http_parser_settings* settings, const char* data, size_t len);
+size_t http_parser_execute(http_parser* parser,
+                           const http_parser_settings* settings,
+                           const char* data, size_t len);
 
 /* If http_should_keep_alive() in the on_headers_complete or
  * on_message_complete callback returns 0, then this should be

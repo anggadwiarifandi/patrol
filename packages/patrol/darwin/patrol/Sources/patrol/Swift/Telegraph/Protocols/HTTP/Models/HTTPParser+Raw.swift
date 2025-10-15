@@ -7,6 +7,8 @@
 //
 
 // import HTTPParserC
+import PatrolObjC
+import Foundation
 
 // MARK: Types
 

@@ -1,3 +1,5 @@
+import Foundation
+
 extension Selector {
   public func toTextFieldNSPredicate() -> NSPredicate {
     var format = ""

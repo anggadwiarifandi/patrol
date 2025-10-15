@@ -5,6 +5,8 @@
 //  source: schema.dart
 //
 
+import Foundation
+
 protocol NativeAutomatorServer {
     func initialize() throws
     func configure(request: ConfigureRequest) throws
