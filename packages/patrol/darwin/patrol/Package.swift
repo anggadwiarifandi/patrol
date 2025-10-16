@@ -22,7 +22,6 @@ let package = Package(
         .target(
             name: "PatrolObjC",
             path: "Sources/patrol/ObjC",
-            exclude: ["Sources/patrol/ObjC/PatrolPlugin.m"],
             publicHeadersPath: "include"
         ),
         .target(
@@ -34,7 +33,10 @@ let package = Package(
             path: "Sources/patrol/Swift",
             resources: [
                 .process("PrivacyInfo.xcprivacy"),
-                .process("Sources/patrol/Resources/*.lproj"),
+                .process("../Resources/de.lproj/Localizable.strings"),
+                .process("../Resources/en.lproj/Localizable.strings"),
+                .process("../Resources/fr.lproj/Localizable.strings"),
+                .process("../Resources/pl.lproj/Localizable.strings"),
             ],
         )
     ],
