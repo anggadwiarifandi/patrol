@@ -37,7 +37,7 @@ let package = Package(
                 .process("../Resources/en.lproj/Localizable.strings"),
                 .process("../Resources/fr.lproj/Localizable.strings"),
                 .process("../Resources/pl.lproj/Localizable.strings"),
-            ],
+            ]
         )
     ],
     swiftLanguageVersions: [.v5]
